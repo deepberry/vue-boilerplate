@@ -1,6 +1,16 @@
-## 企业用户管理平台 
-+ 入口：企业微信
+# Vue3 Boilerplate
 
+**_$repo_**代表当前项目名称,同时也是实际的路由名称
 
-## 产品/设计
-+ 产品原型：[蓝湖产品原型](https://lanhuapp.com/web/#/item/project/product?pid=5a37dd59-fb2b-4e4b-af4c-c065621875c4&versionId=d74a485d-e804-40c4-ab5a-ffa3342d59a9&docId=4612a37b-e02f-4a51-a65d-93b07b0a76a9&docType=axure&pageId=6ddd6ec3575145278bf26a34404aaf10&image_id=4612a37b-e02f-4a51-a65d-93b07b0a76a9&parentId=2be97aee-1c9b-41cf-add6-b4da981b849e)
+## 初始化说明
+
+#### 项目创建
+
+1. 🌈 修改 **_package.json_** 中的 name 字段为`$repo`
+2. 🌈 指定 **_.env_** 中的 **`STATIC_PATH`**
+
+#### 项目启动
+
+1. 🌈 `npm install` 安装依赖
+2. ✨ `npm run serve` 启动本地服务
+3. ✨ `npm run build` 构建
