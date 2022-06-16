@@ -14,5 +14,9 @@ app.use(router)
 import store from './store/index';
 app.use(store)
 
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+app.use(ElementPlus)
+
 // 3.Mount DOM
 app.mount('#app')
