@@ -4,7 +4,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "update":""
   },
   "dependencies": {
     "@vueuse/head": "^0.7.6",
