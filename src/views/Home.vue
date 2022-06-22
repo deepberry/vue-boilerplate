@@ -1,5 +1,5 @@
 <template>
-    <div class="v-home">HOME</div>
+    <div class="p-home">HOME</div>
 </template>
 
 <script>
