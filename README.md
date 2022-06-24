@@ -13,8 +13,6 @@
 -   `静态资源路径`：当部署到线上时，根据需要修改`.env.production`中`STATIC_PATH`
     -   `repo`：当项目部署为本地一个域名下子路径时，使用`/项目名称`（package.json 中的 name）作为根路径
     -   `root`：当项目使用独立域名，并引用本地文件时
-    -   `cdn`：当项目仅静态资源使用指定 CDN 分发时(暂无 cdn 域名)
-    -   当启用整站 CDN 方案时，根据实际情况设为 repo 或 root
 -   `样式扩展`：默认引用[common](https://github.com/deepberry/common)库 global.less，同时引入本地 css/var.less，用于定义公共全局变量或项目级全局变量。
 -   `项目设置`：业务型项目设置请统一填写在`project.json`中。
 -   `伪静态`：当页面有锚点需求时，请修改路由为 history 模式，在一般情况下也总是推荐如此，对应根据实际情况修改 base 值与服务器端规则。
@@ -40,13 +38,18 @@
 
 ### 自动构建
 
-1. 默认使用 actions 构建，会自动部署在 dist 分支。
-    - 如为私有仓库且 github 没有开通付费，请自行给每个项目添加`ACCESS_TOKEN`，需要赋予 token workflow 权限。
-    - 如自行在本地构建，请参考[私有包安装指南](https://github.com/deepberry/FE-docs/blob/master/packages/DeepBerry%E7%A7%81%E6%9C%89%E5%8C%85%E5%AE%89%E8%A3%85.md)进行构建环境的 npm registry 配置。
+默认使用 actions 构建，会自动部署在 dist 分支。
+
+-   如为私有仓库且 github 没有开通付费，请自行给每个项目添加`ACCESS_TOKEN`，需要赋予 token workflow 权限。
+-   如自行在本地构建，请参考[私有包安装指南](https://github.com/deepberry/FE-docs/blob/master/packages/DeepBerry%E7%A7%81%E6%9C%89%E5%8C%85%E5%AE%89%E8%A3%85.md)进行构建环境的 npm registry 配置。
 
 ### 自动部署
 
 1. 主机 hook 部署。（待续）
-2. 默认同时会将构建文件部署至阿里云 OSS。
-    - 请修改配置中 oss 的部署路径，将`$project`修改为项目名（package.json 中的 name）。
-    - 必要时，请将 DNS CNAME 指向 CDN（需配置证书），CDN 回源至 OSS。
+
+### 全球加速
+
+全站 CDN 默认同时会将构建文件部署至阿里云 OSS/deepberry。
+
+-   请修改配置中 oss 的部署路径，将`$project`修改为项目名（package.json 中的 name）。
+-   必要时，请将 DNS CNAME 指向 CDN（需配置证书），CDN 回源至 OSS，映射整个 Bucket 即可。
