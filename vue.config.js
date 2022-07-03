@@ -55,9 +55,11 @@ module.exports = {
         //💝 in-line small imgs ~
         config.module
             .rule("images")
-            .use("url-loader")
-            .loader("url-loader")
-            .tap((options) => Object.assign(options || {}, { limit: 10240 }));
+            .set('parser', {
+                dataUrlCondition: {
+                  maxSize: 4 * 1024 // 4KiB
+                }
+            })
 
         //💝 in-line svg imgs ~
         config.module.rule("vue").use("vue-svg-inline-loader").loader("vue-svg-inline-loader");
