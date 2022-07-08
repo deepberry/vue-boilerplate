@@ -10,7 +10,7 @@
         "prepare": "husky install"
     },
     "dependencies": {
-        "@deepberry/common": "^0.1.0",
+        "@deepberry/common": "^0.1.5",
         "@vueuse/head": "^0.7.6",
         "core-js": "^3.8.3",
         "element-plus": "^2.2.5",
