@@ -23,8 +23,8 @@
 ### 初始化
 
 1. 🌈 修改 **_package.json_** 中的 name 字段为项目名称
-2. 🌈 指定 **_.env_** 中的 **`STATIC_PATH`**
-3. 🌈 修改 **_project.json_** 以定义默认 SEO 信息
+2. 🌈 指定 **_.github/workflows/build.yaml_** 中的 **`$project`** 为项目名称
+3. 🌈 指定 **_.env_** 中的 **`STATIC_PATH`**
 
 ### 项目启动
 
