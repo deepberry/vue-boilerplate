@@ -1,8 +1,7 @@
 <template>
-    <!-- <img alt="Vue logo" src="@/assets/img/logo.png" /> -->
-    <!-- <HelloWorld msg="Hello World" /> -->
-    APP
-    <router-view />
+    <div id="app">
+        <router-view />
+    </div>
 </template>
 
 <script>
