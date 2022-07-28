@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkproject"]=self["webpackChunkproject"]||[]).push([[232],{15:function(e,n,t){t.r(n),t.d(n,{default:function(){return p}});var r=t(252);const c={class:"p-home"};function o(e,n,t,o,u,s){return(0,r.wg)(),(0,r.iD)("div",c,"HOME")}var u={name:"HomeView",props:[],data:function(){return{}},computed:{},methods:{},created:function(){},components:{}},s=t(744);const a=(0,s.Z)(u,[["render",o]]);var p=a}}]);
-//# sourceMappingURL=232.acca19bb.js.map
