@@ -41,3 +41,4 @@ jobs:
                   access-key-secret: ${{secrets.OSS_ACCESS_KEY_SECRET}}
             # TODO:请将$project修改为你要部署的目标位置
             - run: ossutil cp -rf dist oss://deepberry/static/$project
+            # - run: ossutil cp -rf dist oss://deepberry-admin/$project
