@@ -11,8 +11,13 @@ app.use(head)
 import router from './router/index';
 app.use(router)
 
-import store from './store/index';
-app.use(store)
+// vuex
+// import store from './store/index';
+// app.use(store)
+
+// pinia
+import { createPinia } from "pinia";
+app.use(createPinia());
 
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'

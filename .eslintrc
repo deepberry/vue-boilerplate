@@ -1,11 +1,17 @@
 {
     "root": true,
     "env": {
-        "node": true
+        "node": true,
+        "vue/setup-compiler-macros": true
     },
     "extends": ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/typescript"],
     "parserOptions": {
         "parser": "@typescript-eslint/parser"
     },
-    "rules": {}
+    "rules": {
+        "no-unused-vars": ["error", { "varsIgnorePattern": "t" }],
+        "vue/multi-word-component-names": "off",
+        "vue/no-setup-props-destructure": "off"
+    },
+    "globals": { "defineOptions": "writable" }
 }

@@ -3,8 +3,9 @@
         "target": "esnext",
         "module": "esnext",
         "strict": true,
-        "jsx": "preserve",
+        "jsx": "react-jsx",
         "moduleResolution": "node",
+        "resolveJsonModule": true,
         "experimentalDecorators": true,
         "noImplicitAny": false,
         "allowJs": false,
@@ -21,6 +22,6 @@
         },
         "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
     },
-    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
+    "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx", "src/store/common.js"],
     "exclude": ["node_modules", ".storybook", "./src/stories"]
 }
